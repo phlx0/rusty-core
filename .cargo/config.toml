@@ -1,0 +1,9 @@
+[build]
+target = "x86_64.json"
+
+[target.x86_64-unknown-none]
+runner = "bootimage runner -- -nographic"
+
+[unstable]
+build-std = ["core", "compiler_builtins", "alloc"]
+
